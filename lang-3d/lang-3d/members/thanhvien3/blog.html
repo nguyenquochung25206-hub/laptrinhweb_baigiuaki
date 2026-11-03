@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <link rel="stylesheet" href="css/ocean-effects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Trần Thị Thúy Nga, sinh viên Công nghệ thông tin.">
+  <title>Blog | Thúy Nga — Cyber Ocean</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script src="js/ocean-effects.js"></script>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+  
+  <div class="ocean-background" aria-hidden="true">
+    <div class="ocean-glow glow-one"></div>
+    <div class="ocean-glow glow-two"></div>
+    <div class="ocean-glow glow-three"></div>
+  </div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a href="index.html" class="logo">
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+        <li><a href="skills.html" class="nav-link">Kỹ năng</a></li>
+        <li><a href="projects.html" class="nav-link">Dự án</a></li>
+        <li><a href="experience.html" class="nav-link">Kinh nghiệm</a></li>
+        <li><a href="education.html" class="nav-link">Học vấn</a></li>
+        <li><a href="blog.html" class="nav-link active" aria-current="page">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+        <li><a href="resume.html" class="nav-link">CV</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Blog</div>
+        <span class="section-index">07 / NOTES &amp; LEARNING</span>
+        <h1>Ghi chép <span class="gradient-text">hành trình học</span></h1>
+        <p class="lead">Góc chia sẻ kiến thức, ghi chú thực hành và những điều rút ra trong quá trình học lập trình.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="card-grid">
+        <article class="card reveal">
+          <div class="blog-meta">WEB DEVELOPMENT · BÀI VIẾT MẪU</div>
+          <h3>Vì sao bố cục quan trọng trong thiết kế website?</h3>
+          <p>Phân cấp tiêu đề, chiều rộng dòng chữ, khoảng trắng và tính nhất quán giúp người đọc hiểu nội dung nhanh hơn.</p>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="contact.html">Trao đổi thêm →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="blog-meta">LEARNING NOTES · BÀI VIẾT MẪU</div>
+          <h3>Học HTML, CSS và JavaScript theo từng bước</h3>
+          <p>Bắt đầu với cấu trúc, sau đó xây dựng giao diện, cuối cùng thêm tương tác và kiểm tra hành vi trên trình duyệt.</p>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="contact.html">Trao đổi thêm →</a>
+          </div>
+        </article>
+
+        <article class="card reveal">
+          <div class="blog-meta">STUDENT LIFE · BÀI VIẾT MẪU</div>
+          <h3>Biến bài tập thành một dự án có thể trình bày</h3>
+          <p>Đặt mục tiêu rõ ràng, chia nhỏ chức năng, lưu lại các quyết định và ghi trung thực trạng thái hoàn thành.</p>
+          <div class="project-actions">
+            <a class="btn btn-outline" href="contact.html">Trao đổi thêm →</a>
+          </div>
+        </article>
+      </div>
+      
+      <p class="note" style="text-align:left;margin-top:18px">Các thẻ hiện là chủ đề gợi ý, không phải bài viết đã xuất bản. Hãy thay bằng nội dung do bạn tự viết.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"></span> TRẦN THỊ THÚYNGA <span class="logo-symbol"></span>
+      </a>
+      <p>Thiết kế và phát triển bởi Trần Thị Thúy Nga</p>
+      <p>© <span id="currentYear"></span> Cyber Ocean Portfolio</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

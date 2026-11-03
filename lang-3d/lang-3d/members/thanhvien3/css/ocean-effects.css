@@ -1,0 +1,102 @@
+/* LỚP HIỆU ỨNG ĐẠI DƯƠNG */
+#ocean-cursor-effects {
+    position: fixed;
+    inset: 0;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* SỨA ĐI THEO CHUỘT */
+.cursor-jellyfish {
+    position: absolute;
+    width: 200px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    animation: cursorJellyBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes cursorJellyBounce {
+    0%, 100% {
+        scale: 1;
+    }
+    50% {
+        scale: 0.92;
+    }
+}
+
+/* BONG BÓNG NỔI TỪ ĐÁY LÊN */
+.ocean-bubble {
+    position: absolute;
+    bottom: -60px;
+    border: 1px solid rgba(255,255,255,0.75);
+    border-radius: 50%;
+    background: radial-gradient(
+        circle at 30% 30%,
+        rgba(255,255,255,0.7),
+        rgba(100,210,255,0.12)
+    );
+    box-shadow: 0 0 12px rgba(120,220,255,0.3);
+    animation: bubbleRise linear forwards;
+}
+
+@keyframes bubbleRise {
+    0% {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    15% {
+        opacity: 0.8;
+    }
+    50% {
+        transform: translateY(-55vh) translateX(25px);
+    }
+    100% {
+        transform: translateY(-115vh) translateX(-20px);
+        opacity: 0;
+    }
+}
+
+/* ĐÀN SỨA NỔI TỪ DƯỚI LÊN */
+.rising-jelly {
+    position: absolute;
+    bottom: -250px;
+    opacity: 0;
+    animation: jellyRise linear forwards;
+}
+
+.rising-jelly img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    animation: jellyBounce 2.5s ease-in-out infinite;
+}
+
+@keyframes jellyRise {
+    0% {
+        transform: translate(0, 0);
+        opacity: 0;
+    }
+    10% {
+        opacity: 0.75;
+    }
+    40% {
+        transform: translate(35px, -40vh);
+    }
+    70% {
+        transform: translate(-30px, -80vh);
+    }
+    100% {
+        transform: translate(20px, -120vh);
+        opacity: 0;
+    }
+}
+
+@keyframes jellyBounce {
+    0%, 100% {
+        transform: translateY(0) scale(1);
+    }
+    50% {
+        transform: translateY(-15px) scale(0.9, 1.1);
+    }
+}

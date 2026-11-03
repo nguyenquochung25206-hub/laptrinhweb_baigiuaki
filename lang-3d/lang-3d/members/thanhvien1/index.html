@@ -1,0 +1,794 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nguyễn Thị Mỹ Hương | Portfolio - Fresher Web Developer</title>
+  <meta name="description"
+    content="Portfolio cá nhân của Nguyễn Thị Mỹ Hương - Sinh viên năm ba ngành Công nghệ Thông tin trường ĐH Giao thông vận tải TP.HCM (UTH). Mục tiêu Fresher Web Developer.">
+  <meta name="author" content="Nguyễn Thị Mỹ Hương">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="images/avatar.jpg">
+
+  <!-- Google Fonts: Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-theme="light">
+  <!-- Thanh tiến trình cuộn trang (Reading Progress Bar) -->
+  <div id="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ==================== 1. HEADER / NAVBAR ==================== -->
+  <header class="header" id="header">
+    <div class="container header-container">
+      <!-- Logo -->
+      <a href="#hero" class="logo">
+        <span class="logo-bracket">&lt;</span>MyHuong<span class="logo-highlight">.dev</span><span
+          class="logo-bracket">/&gt;</span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#hero" class="nav-link active">Trang chủ</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">Giới thiệu</a></li>
+          <li class="nav-item"><a href="#goals" class="nav-link">Mục tiêu</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Kỹ năng</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Học vấn</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Dự án</a></li>
+          <li class="nav-item"><a href="#interests" class="nav-link">Sở thích</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Liên hệ</a></li>
+        </ul>
+      </nav>
+
+      <!-- Action Buttons: Theme Toggle & Mobile Hamburger -->
+      <div class="header-actions">
+        <!-- Nút chuyển đổi Dark/Light mode -->
+        <button id="theme-toggle" class="icon-btn" aria-label="Chuyển chế độ sáng tối"
+          title="Chuyển đổi giao diện Sáng / Tối">
+          <i class="fa-solid fa-moon" id="theme-icon"></i>
+        </button>
+
+        <!-- Nút mở menu trên Mobile -->
+        <button id="menu-toggle" class="icon-btn mobile-only" aria-label="Mở menu" title="Mở danh mục điều hướng">
+          <i class="fa-solid fa-bars" id="menu-icon"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==================== BANNER / HERO SECTION ==================== -->
+    <section class="hero-section" id="hero">
+      <div class="container hero-container">
+        <!-- Cột thông tin giới thiệu -->
+        <div class="hero-content">
+          <div class="badge-status">
+            <span class="pulse-dot"></span>
+            <span>Sẵn sàng tìm kiếm cơ hội Thực tập / Fresher</span>
+          </div>
+
+          <h1 class="hero-title">
+            Xin chào, mình là <br>
+            <span class="gradient-text">Nguyễn Thị Mỹ Hương</span>
+          </h1>
+
+          <!-- Hiệu ứng gõ chữ Typewriter -->
+          <div class="typewriter-box">
+            <span class="typewriter-prefix">Mình là: </span>
+            <span id="typewriter-text" class="typewriter-text"></span>
+            <span class="typewriter-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            Sinh viên năm ba ngành <strong>Công nghệ Thông tin</strong> tại <em>Trường Đại học Giao thông vận tải
+              TP.HCM (UTH)</em>.
+            Sở hữu tư duy logic, nền tảng lập trình cơ bản, tinh thần tự học kiên trì và khát khao cọ xát thực tế tại
+            môi trường doanh nghiệp năng động.
+          </p>
+
+          <!-- Nút hành động CTA -->
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <i class="fa-solid fa-laptop-code"></i> Xem Dự Án
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fa-regular fa-paper-plane"></i> Liên Hệ Ngay
+            </a>
+            <a href="https://github.com/NguyenHuong15" target="_blank" rel="noopener noreferrer"
+              class="btn btn-secondary" title="Xem GitHub của Hương">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+          </div>
+
+          <!-- Thông số nhanh -->
+          <div class="hero-stats">
+            <div class="stat-card">
+              <span class="stat-number">UTH</span>
+              <span class="stat-label">Sinh viên năm ba</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">03+</span>
+              <span class="stat-label">Dự án thực tế</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">100%</span>
+              <span class="stat-label">Nhiệt huyết &amp; Tự học</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Cột hình ảnh đại diện -->
+        <div class="hero-visual">
+          <div class="avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <img src="images/avatar.jpg" alt="Nguyễn Thị Mỹ Hương - Fresher Web Developer" class="avatar-img"
+              width="360" height="360">
+
+            <!-- Badges trôi nổi quanh avatar -->
+            <div class="floating-badge badge-top-right">
+              <i class="fa-brands fa-java text-orange"></i> HTML / CSS
+            </div>
+            <div class="floating-badge badge-bottom-left">
+              <i class="fa-brands fa-js text-yellow"></i> JavaScript
+            </div>
+            <div class="floating-badge badge-middle-left">
+              <i class="fa-solid fa-database text-blue"></i> React.js
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. GIỚI THIỆU BẢN THÂN ==================== -->
+    <section class="section about-section" id="about">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">About Me</span>
+          <h2 class="section-title">Giới Thiệu Bản Thân</h2>
+          <p class="section-subtitle">Hiểu rõ hơn về câu chuyện, phong cách làm việc và niềm đam mê công nghệ của mình
+          </p>
+        </div>
+
+        <div class="about-grid">
+          <!-- Thẻ hồ sơ cá nhân -->
+          <div class="about-card profile-card">
+            <div class="profile-header">
+              <img src="images/avatar.jpg" alt="Nguyễn Thị Mỹ Hương" class="profile-thumb">
+              <div>
+                <h3 class="profile-name">Nguyễn Thị Mỹ Hương</h3>
+                <span class="profile-role">Fresher Web Developer</span>
+              </div>
+            </div>
+
+            <ul class="profile-info-list">
+              <li>
+                <i class="fa-solid fa-graduation-cap"></i>
+                <div>
+                  <strong>Trường:</strong>
+                  <span>Đại học Giao thông vận tải TP.HCM (UTH)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-book-open"></i>
+                <div>
+                  <strong>Chuyên ngành:</strong>
+                  <span>Công nghệ Thông tin (Sinh viên năm ba)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-compass"></i>
+                <div>
+                  <strong>Định hướng:</strong>
+                  <span>Web Developer (Frontend / Fullstack)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-location-dot"></i>
+                <div>
+                  <strong>Khu vực:</strong>
+                  <span>TP. Hồ Chí Minh (Onsite / Hybrid)</span>
+                </div>
+              </li>
+              <li>
+                <i class="fa-solid fa-circle-check text-green"></i>
+                <div>
+                  <strong>Tình trạng:</strong>
+                  <span>Sẵn sàng tiếp nhận công việc thực tập</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Đoạn chia sẻ chi tiết -->
+          <div class="about-card story-card">
+            <h3 class="story-title">
+              <i class="fa-solid fa-code text-pink"></i> Tinh thần học hỏi &amp; Nền tảng lập trình
+            </h3>
+            <p class="story-text">
+              Là một sinh viên Công nghệ Thông tin đầy nhiệt huyết, tuy chưa có kinh nghiệm thực tế dài hạn tại doanh
+              nghiệp, nhưng mình sở hữu <strong>nền tảng lập trình vững vàng</strong>, tư duy hướng đối tượng (OOP) rõ
+              ràng, và kỹ năng xây dựng giao diện cũng như xử lý logic dữ liệu.
+            </p>
+            <p class="story-text">
+              Điểm mạnh lớn nhất của mình là <strong>tinh thần tự học kiên trì</strong> và <strong>không ngại tiếp thu
+                phản hồi</strong>. Khi đối mặt với công nghệ mới hay bài toán hóc búa, mình luôn chủ động tra cứu tài
+              liệu chính thống, thử nghiệm và tối ưu mã nguồn cho đến khi đạt kết quả tốt nhất.
+            </p>
+
+            <div class="strengths-row">
+              <div class="strength-item">
+                <i class="fa-solid fa-bolt"></i>
+                <h4>Thích nghi nhanh</h4>
+                <p>Nắm bắt công nghệ, thư viện và framework mới theo nhu cầu dự án.</p>
+              </div>
+              <div class="strength-item">
+                <i class="fa-solid fa-clock-rotate-left"></i>
+                <h4>Trách nhiệm &amp; Kỷ luật</h4>
+                <p>Cam kết hoàn thành đúng hạn (deadline) và chú trọng chất lượng mã nguồn.</p>
+              </div>
+              <div class="strength-item">
+                <i class="fa-solid fa-people-group"></i>
+                <h4>Lắng nghe &amp; Hợp tác</h4>
+                <p>Cởi mở với góp ý từ mentor và đồng đội để liên tục hoàn thiện bản thân.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. MỤC TIÊU NGHỀ NGHIỆP ==================== -->
+    <section class="section goals-section" id="goals">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Career Roadmap</span>
+          <h2 class="section-title">Mục Tiêu Nghề Nghiệp</h2>
+          <p class="section-subtitle">Định hướng phát triển bản thân từng giai đoạn trên con đường trở thành kỹ sư phần
+            mềm</p>
+        </div>
+
+        <div class="goals-grid">
+          <!-- Mục tiêu ngắn hạn -->
+          <div class="goal-card">
+            <div class="goal-icon short-term-icon">
+              <i class="fa-solid fa-bullseye"></i>
+            </div>
+            <span class="goal-badge">Giai đoạn hiện tại (1 - 2 năm)</span>
+            <h3 class="goal-heading">Mục Tiêu Ngắn Hạn</h3>
+            <ul class="goal-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Ứng tuyển thành công vị trí <strong>Thực tập sinh (Intern) / Fresher Web Developer</strong> tại
+                  các doanh nghiệp công nghệ.</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Làm quen và cọ xát thực tế với quy trình phát triển phần mềm chuẩn <strong>Agile/Scrum</strong>,
+                  văn hóa Code Review và quản lý Git chuyên nghiệp.</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Trau dồi chuyên sâu về hệ sinh thái <strong>React.js</strong> (Frontend), <strong>Spring
+                    Boot</strong> và thiết kế chuẩn <strong>RESTful API</strong> (Backend).</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Mục tiêu dài hạn -->
+          <div class="goal-card">
+            <div class="goal-icon long-term-icon">
+              <i class="fa-solid fa-rocket"></i>
+            </div>
+            <span class="goal-badge">Định hướng tương lai (3 - 5 năm)</span>
+            <h3 class="goal-heading">Mục Tiêu Dài Hạn</h3>
+            <ul class="goal-list">
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Trở thành một <strong>Software Engineer</strong> độc lập, có thể đảm nhiệm trọn vẹn từ thiết kế
+                  kiến trúc phân tầng đến triển khai sản phẩm.</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Làm chủ các quy chuẩn viết mã sạch (Clean Architecture), kiểm thử tự động (Unit Test / Integration
+                  Test) và tối ưu hóa hiệu năng ứng dụng web quy mô lớn.</span>
+              </li>
+              <li>
+                <i class="fa-regular fa-circle-check"></i>
+                <span>Đóng góp giá trị thiết thực cho tổ chức và sẵn sàng chia sẻ, dẫn dắt các thế hệ thực tập sinh kế
+                  tiếp.</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. KỸ NĂNG CHUYÊN MÔN ==================== -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Abilities</span>
+          <h2 class="section-title">Kỹ Năng &amp; Công Nghệ</h2>
+          <p class="section-subtitle">Tổng hợp các ngôn ngữ, công cụ và kỹ năng mềm được tích lũy qua đồ án môn học và
+            quá trình tự học</p>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Nhóm 1: Frontend & UI -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon"><i class="fa-brands fa-html5"></i></div>
+              <h3>Frontend &amp; Giao Diện</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-html5"></i> HTML5 (Semantic)</span>
+              <span class="skill-tag"><i class="fa-brands fa-css3-alt"></i> CSS3 (Flexbox/Grid)</span>
+              <span class="skill-tag"><i class="fa-brands fa-js"></i> JavaScript (ES6+, DOM)</span>
+              <span class="skill-tag"><i class="fa-solid fa-wind"></i> Tailwind CSS</span>
+              <span class="skill-tag"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+              <span class="skill-tag"><i class="fa-brands fa-react"></i> React.js (Cơ bản)</span>
+            </div>
+          </div>
+
+          <!-- Nhóm 2: Backend & Database -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon"><i class="fa-brands fa-java"></i></div>
+              <h3>Backend &amp; Cơ Sở Dữ Liệu</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-java"></i> Java Core &amp; OOP</span>
+              <span class="skill-tag"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+              <span class="skill-tag"><i class="fa-solid fa-network-wired"></i> RESTful API</span>
+              <span class="skill-tag"><i class="fa-solid fa-database"></i> MySQL</span>
+              <span class="skill-tag"><i class="fa-solid fa-server"></i> SQL Server</span>
+              <span class="skill-tag"><i class="fa-brands fa-python"></i> Python cơ bản</span>
+            </div>
+          </div>
+
+          <!-- Nhóm 3: Công cụ & Môi trường phát triển -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon"><i class="fa-solid fa-toolbox"></i></div>
+              <h3>Công Cụ &amp; Quản Lý Mã Nguồn</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+              <span class="skill-tag"><i class="fa-solid fa-paper-plane"></i> Postman</span>
+              <span class="skill-tag"><i class="fa-solid fa-code"></i> VS Code</span>
+              <span class="skill-tag"><i class="fa-solid fa-terminal"></i> IntelliJ IDEA</span>
+              <span class="skill-tag"><i class="fa-brands fa-figma"></i> Figma (UI/UX)</span>
+              <span class="skill-tag"><i class="fa-solid fa-table"></i> MySQL Workbench</span>
+            </div>
+          </div>
+
+          <!-- Nhóm 4: Kỹ năng mềm -->
+          <div class="skill-group-card">
+            <div class="skill-group-header">
+              <div class="group-icon"><i class="fa-solid fa-user-check"></i></div>
+              <h3>Kỹ Năng Mềm &amp; Tư Duy</h3>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag"><i class="fa-solid fa-magnifying-glass"></i> Tự tra cứu tài liệu chuyên
+                ngành</span>
+              <span class="skill-tag"><i class="fa-regular fa-clock"></i> Tinh thần trách nhiệm &amp; Deadline</span>
+              <span class="skill-tag"><i class="fa-solid fa-comments"></i> Lắng nghe &amp; Tiếp thu nhận xét</span>
+              <span class="skill-tag"><i class="fa-solid fa-handshake"></i> Kỹ năng phối hợp &amp; Làm việc nhóm</span>
+              <span class="skill-tag"><i class="fa-solid fa-lightbulb"></i> Tư duy phân tích bài toán</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. HỌC VẤN & HOẠT ĐỘNG ==================== -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">My Journey</span>
+          <h2 class="section-title">Học Vấn &amp; Hoạt Động</h2>
+          <p class="section-subtitle">Chặng đường tích lũy tri thức và rèn luyện kỹ năng thực tiễn</p>
+        </div>
+
+        <div class="timeline">
+          <!-- Timeline Item 1 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">2021 - Hiện tại (Sinh viên năm ba)</div>
+              <h3 class="timeline-title">Trường Đại học Giao thông vận tải TP.HCM (UTH)</h3>
+              <h4 class="timeline-subtitle">Chuyên ngành: Công nghệ Thông tin</h4>
+              <p class="timeline-desc">
+                Nắm vững nền tảng khoa học máy tính: Cấu trúc dữ liệu và giải thuật, Lập trình hướng đối tượng (OOP),
+                Mạng máy tính...
+                Hoàn thành tốt các đồ án môn học chuyên ngành với điểm số khá.
+              </p>
+            </div>
+          </div>
+
+          <!-- Timeline Item 2 -->
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-date">Quá trình tự rèn luyện &amp; Ngoại khóa</div>
+              <h3 class="timeline-title">Tham Gia Tech Talk &amp; Tự Nghiên Cứu Giao Diện</h3>
+              <h4 class="timeline-subtitle">Cộng đồng Công nghệ &amp; UI/UX</h4>
+              <p class="timeline-desc">
+                Thường xuyên theo dõi và xem các trang web đẹp để lấy cảm hứng thiết kế; thích tự gõ code làm thử
+                các nút bấm, hiệu ứng chuyển động đơn giản bằng HTML, CSS và JavaScript.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. DỰ ÁN CÁ NHÂN ==================== -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Featured Works</span>
+          <h2 class="section-title">Dự Án Tiêu Biểu</h2>
+          <p class="section-subtitle">Các sản phẩm và đồ án mình đã trực tiếp tham gia phân tích, thiết kế và lập trình
+          </p>
+        </div>
+
+        <!-- Bộ lọc dự án (Project Filter Buttons) -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all">Tất cả dự án</button>
+          <button class="filter-btn" data-filter="backend">Backend &amp; Tự động hóa</button>
+          <button class="filter-btn" data-filter="fullstack">Fullstack / Web App</button>
+          <button class="filter-btn" data-filter="frontend">Frontend &amp; UI</button>
+        </div>
+
+        <div class="projects-grid">
+          <!-- DỰ ÁN 1: Jira & GitHub -->
+          <article class="project-card" data-category="backend">
+            <div class="project-thumb">
+              <img src="images/project-jira.svg" alt="Hệ Thống Quản Lý Jira và GitHub" loading="lazy">
+              <span class="category-badge">Backend &amp; CI/CD</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Hệ Thống Quản Lý Jira và GitHub</h3>
+              <p class="project-description">
+                Đồ án tích hợp hệ thống và tự động hóa quy trình làm việc (CI/CD workflow). Ứng dụng lắng nghe Webhook
+                từ GitHub để tự động chuyển trạng thái Task tương ứng trên Jira Cloud khi có Commit hoặc Pull Request,
+                đồng thời hỗ trợ tra cứu lịch sử đóng góp code theo từng đầu việc.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">Java</span>
+                <span class="tech-pill">Spring Boot</span>
+                <span class="tech-pill">GitHub Webhooks</span>
+                <span class="tech-pill">Jira REST API</span>
+                <span class="tech-pill">Postman</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline btn-modal-view" data-project="jira">
+                  <i class="fa-solid fa-circle-info"></i> Chi tiết
+                </button>
+                <a href="https://github.com/NguyenHuong15" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <i class="fa-brands fa-github"></i> Mã nguồn
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- DỰ ÁN 2: ReMarket -->
+          <article class="project-card" data-category="fullstack">
+            <div class="project-thumb">
+              <img src="images/project-remarket.svg" alt="Website Mua Bán Đồ Cổ ReMarket" loading="lazy">
+              <span class="category-badge">E-Commerce Web</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Mua Bán Đồ Cổ - ReMarket</h3>
+              <p class="project-description">
+                Nền tảng thương mại điện tử chuyên biệt kết nối người sưu tầm cổ vật: hỗ trợ phân loại theo niên đại và
+                chất liệu, giỏ hàng trực tuyến và giải quyết bài toán quản lý tồn kho sản phẩm độc bản (Unique Item)
+                tránh đặt trùng lúc thanh toán đồng thời.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5/CSS3</span>
+                <span class="tech-pill">JavaScript</span>
+                <span class="tech-pill">Node.js / Express</span>
+                <span class="tech-pill">MySQL</span>
+                <span class="tech-pill">Bootstrap 5</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline btn-modal-view" data-project="remarket">
+                  <i class="fa-solid fa-circle-info"></i> Chi tiết
+                </button>
+                <a href="https://github.com/NguyenHuong15" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <i class="fa-brands fa-github"></i> Mã nguồn
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- DỰ ÁN 3: Đăng Ký Tập Gym (Dự án bổ sung) -->
+          <article class="project-card" data-category="frontend">
+            <div class="project-thumb">
+              <img src="images/project-gym.svg" alt="Website Đăng Ký Tập Gym" loading="lazy">
+              <span class="category-badge">Frontend Web App</span>
+            </div>
+            <div class="project-body">
+              <h3 class="project-title">Website Đăng Ký Hội Viên Gym</h3>
+              <p class="project-description">
+                Ứng dụng web quản lý và đăng ký hội viên phòng tập gym: kiểm tra hợp lệ thông tin người đăng ký, lựa
+                chọn gói tập / HLV cá nhân (PT), lưu trữ và đồng bộ hóa danh sách thành viên trực tiếp bằng LocalStorage
+                API.
+              </p>
+              <div class="project-tech-stack">
+                <span class="tech-pill">HTML5</span>
+                <span class="tech-pill">CSS3 Animation</span>
+                <span class="tech-pill">JavaScript ES6</span>
+                <span class="tech-pill">LocalStorage API</span>
+              </div>
+              <div class="project-links">
+                <button class="btn btn-sm btn-outline btn-modal-view" data-project="gym">
+                  <i class="fa-solid fa-circle-info"></i> Chi tiết
+                </button>
+                <a href="https://github.com/NguyenHuong15" target="_blank" rel="noopener noreferrer"
+                  class="btn btn-sm btn-primary">
+                  <i class="fa-brands fa-github"></i> Mã nguồn
+                </a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. CHỨNG CHỈ & SỞ THÍCH ==================== -->
+    <section class="section interests-section" id="interests">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">More About Me</span>
+          <h2 class="section-title">Chứng Chỉ &amp; Sở Thích</h2>
+          <p class="section-subtitle">Góc nhìn đa chiều về định hướng học tập và đời sống cá nhân</p>
+        </div>
+
+        <div class="interests-grid">
+          <!-- Cột Chứng chỉ / Giải thưởng -->
+          <div class="interest-block">
+            <div class="interest-header">
+              <i class="fa-solid fa-award"></i>
+              <h3>Chứng Chỉ &amp; Giải Thưởng</h3>
+            </div>
+            <div class="status-note-box">
+              <div class="note-icon"><i class="fa-solid fa-hourglass-half"></i></div>
+              <div>
+                <h4>Chưa có (Đang trong lộ trình ôn luyện)</h4>
+                <p>
+                  Hiện tại mình đang tập trung hoàn thành chương trình năm ba tại UTH, đồng thời đang trong lộ trình
+                  rèn luyện để thi chứng chỉ ngoại ngữ và các chứng chỉ lập trình chuyên môn. Đạt kết quả tốt trong các
+                  đồ án học phần tại trường.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cột Sở thích cá nhân -->
+          <div class="interest-block">
+            <div class="interest-header">
+              <i class="fa-solid fa-heart"></i>
+              <h3>Sở Thích Cá Nhân</h3>
+            </div>
+            <div class="hobbies-list">
+              <div class="hobby-card">
+                <i class="fa-brands fa-dribbble text-pink"></i>
+                <div>
+                  <h4>Giao diện Dribbble / Awwwards</h4>
+                  <p>Thích tìm hiểu các phong cách thiết kế UI/UX hiện đại, vi tương tác (micro-interactions).</p>
+                </div>
+              </div>
+              <div class="hobby-card">
+                <i class="fa-solid fa-wand-magic-sparkles text-purple"></i>
+                <div>
+                  <h4>CSS Animation</h4>
+                  <p>Đam mê thử nghiệm các chuyển động mượt mà bằng CSS thuần và JavaScript.</p>
+                </div>
+              </div>
+              <div class="hobby-card">
+                <i class="fa-solid fa-microphone text-blue"></i>
+                <div>
+                  <h4>Tech Talk Công Nghệ</h4>
+                  <p>Tham dự các buổi chia sẻ về công nghệ mới để mở rộng góc nhìn và học hỏi kinh nghiệm.</p>
+                </div>
+              </div>
+              <div class="hobby-card">
+                <i class="fa-solid fa-utensils text-orange"></i>
+                <div>
+                  <h4>Nấu ăn cùng gia đình</h4>
+                  <p>Khoảng thời gian thư giãn giúp cân bằng năng lượng và tái tạo cảm hứng sáng tạo.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 8. FORM LIÊN HỆ ==================== -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Get In Touch</span>
+          <h2 class="section-title">Thông Tin Liên Hệ</h2>
+          <p class="section-subtitle">Bạn có cơ hội thực tập, dự án tiềm năng hoặc muốn kết nối? Hãy gửi tin nhắn cho
+            mình nhé!</p>
+        </div>
+
+        <div class="contact-wrapper">
+          <!-- Thông tin liên hệ trực tiếp -->
+          <div class="contact-info-panel">
+            <h3>Thông Tin Cá Nhân</h3>
+            <p>Rất mong nhận được phản hồi và cơ hội phỏng vấn từ Quý công ty / Quý Anh Chị nhà tuyển dụng.</p>
+
+            <div class="contact-items">
+              <a href="mailto:izgmh156@gmail.com" class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div>
+                  <span class="contact-label">Email:</span>
+                  <span class="contact-value">izgmh156@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="tel:0569101435" class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <span class="contact-label">Số điện thoại:</span>
+                  <span class="contact-value">0569 101 435</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div>
+                  <span class="contact-label">Địa điểm làm việc:</span>
+                  <span class="contact-value">TP. Hồ Chí Minh (Onsite / Hybrid)</span>
+                </div>
+              </div>
+
+              <a href="https://github.com/NguyenHuong15" target="_blank" rel="noopener noreferrer" class="contact-item">
+                <div class="contact-icon"><i class="fa-brands fa-github"></i></div>
+                <div>
+                  <span class="contact-label">GitHub cá nhân:</span>
+                  <span class="contact-value">github.com/NguyenHuong15</span>
+                </div>
+              </a>
+            </div>
+
+            <!-- Trạng thái tuyển dụng -->
+            <div class="availability-badge">
+              <i class="fa-solid fa-briefcase"></i>
+              <span>Sẵn sàng phỏng vấn và nhận việc ngay</span>
+            </div>
+          </div>
+
+          <!-- Form liên hệ có JS Validation -->
+          <div class="contact-form-panel">
+            <h3>Gửi Tin Nhắn Cho Mình</h3>
+
+            <form id="contact-form" novalidate>
+              <!-- Họ và tên -->
+              <div class="form-group">
+                <label for="contact-name">Họ và tên của bạn <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-user"></i>
+                  <input type="text" id="contact-name" name="name" placeholder="Ví dụ: Nguyễn Văn A"
+                    autocomplete="name">
+                </div>
+                <span class="form-error" id="name-error"></span>
+              </div>
+
+              <!-- Email -->
+              <div class="form-group">
+                <label for="contact-email">Địa chỉ Email <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-regular fa-envelope"></i>
+                  <input type="email" id="contact-email" name="email" placeholder="Ví dụ: email@domain.com"
+                    autocomplete="email">
+                </div>
+                <span class="form-error" id="email-error"></span>
+              </div>
+
+              <!-- Tiêu đề -->
+              <div class="form-group">
+                <label for="contact-subject">Tiêu đề liên hệ <span class="required">*</span></label>
+                <div class="input-with-icon">
+                  <i class="fa-solid fa-heading"></i>
+                  <input type="text" id="contact-subject" name="subject"
+                    placeholder="Ví dụ: Cơ hội thực tập Web Developer">
+                </div>
+                <span class="form-error" id="subject-error"></span>
+              </div>
+
+              <!-- Lời nhắn -->
+              <div class="form-group">
+                <label for="contact-message">Nội dung tin nhắn <span class="required">*</span></label>
+                <textarea id="contact-message" name="message" rows="4"
+                  placeholder="Nhập nội dung bạn muốn trao đổi..."></textarea>
+                <span class="form-error" id="message-error"></span>
+              </div>
+
+              <!-- Nút submit -->
+              <button type="submit" class="btn btn-primary btn-submit" id="btn-submit">
+                <span>Gửi Tin Nhắn</span>
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== MODAL CHI TIẾT DỰ ÁN ==================== -->
+  <div class="modal-backdrop" id="project-modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+    <div class="modal-dialog">
+      <button class="modal-close" id="modal-close-btn" aria-label="Đóng cửa sổ">&times;</button>
+      <div class="modal-content" id="modal-dynamic-content">
+        <!-- Nội dung modal được JavaScript render linh hoạt -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast thông báo thành công khi gửi form -->
+  <div class="toast-notification" id="toast" role="alert">
+    <i class="fa-solid fa-circle-check toast-icon"></i>
+    <div class="toast-content">
+      <h4 class="toast-title" id="toast-title">Thành công!</h4>
+      <p class="toast-msg" id="toast-msg">Tin nhắn của bạn đã được gửi thành công.</p>
+    </div>
+  </div>
+
+  <!-- Nút Cuộn Lên Đầu Trang (Scroll to Top) -->
+  <button id="scroll-to-top" class="scroll-top-btn" aria-label="Cuộn lên đầu trang" title="Lên đầu trang">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <a href="#hero" class="logo">
+          <span class="logo-bracket">&lt;</span>MyHuong<span class="logo-highlight">.dev</span><span
+            class="logo-bracket">/&gt;</span>
+        </a>
+        <p>Portfolio cá nhân của Nguyễn Thị Mỹ Hương - Fresher Web Developer.</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#hero">Trang chủ</a>
+        <a href="#about">Giới thiệu</a>
+        <a href="#skills">Kỹ năng</a>
+        <a href="#projects">Dự án</a>
+        <a href="#contact">Liên hệ</a>
+      </div>
+
+      <div class="footer-copyright">
+        <p>&copy; 2026 Nguyễn Thị Mỹ Hương. All rights reserved.</p>
+        <p class="footer-subtext">Xây dựng bằng Semantic HTML5, CSS3 hiện đại và JavaScript thuần.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Custom JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>

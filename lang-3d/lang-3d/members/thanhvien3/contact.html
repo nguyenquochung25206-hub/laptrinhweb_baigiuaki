@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="css/ocean-effects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Trần Thị Thúy Nga, sinh viên Công nghệ thông tin.">
+  <title>Liên hệ | Thúy Nga — Cyber Ocean</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script src="js/ocean-effects.js"></script>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <div class="ocean-background" aria-hidden="true">
+    <div class="ocean-glow glow-one"></div>
+    <div class="ocean-glow glow-two"></div>
+    <div class="ocean-glow glow-three"></div>
+  </div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+        <li><a href="skills.html" class="nav-link">Kỹ năng</a></li>
+        <li><a href="projects.html" class="nav-link">Dự án</a></li>
+        <li><a href="experience.html" class="nav-link">Kinh nghiệm</a></li>
+        <li><a href="education.html" class="nav-link">Học vấn</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link active" aria-current="page">Liên hệ</a></li>
+        <li><a href="resume.html" class="nav-link">CV</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Liên hệ</div>
+        <span class="section-index">08 / CONTACT</span>
+        <h1>Kết nối với <span class="gradient-text">mình</span></h1>
+        <p class="lead">Bạn có thể liên hệ qua các kênh bên dưới hoặc điền biểu mẫu. Biểu mẫu bản mẫu chưa gửi dữ liệu lên máy chủ.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="contact-grid">
+        <aside class="card reveal">
+          <h3>Thông tin liên hệ</h3>
+          <div class="contact-method">
+            <div class="card-icon">⌘</div>
+            <div>
+              <strong>GitHub</strong>
+              <span><a href="https://github.com/Thngatran" target="_blank" rel="noopener noreferrer">github.com/Thngatran ↗</a></span>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="card-icon">@</div>
+            <div>
+              <strong>Email</strong>
+              <span>Thêm email bạn muốn công khai</span>
+            </div>
+          </div>
+          <div class="contact-method">
+            <div class="card-icon">⌖</div>
+            <div>
+              <strong>Địa điểm</strong>
+              <span>TP. Hồ Chí Minh, Việt Nam</span>
+            </div>
+          </div>
+          <p class="form-note" style="margin-top:18px">Chỉ công khai thông tin liên hệ mà bạn thấy phù hợp.</p>
+        </aside>
+
+        <form class="card reveal" id="contactForm">
+          <h3>Gửi lời nhắn</h3>
+          <div class="form-grid" style="margin-top:20px">
+            <div class="form-field">
+              <label for="name">Họ và tên</label>
+              <input id="name" name="name" required autocomplete="name" placeholder="Nhập họ tên">
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" required autocomplete="email" placeholder="name@example.com">
+            </div>
+            <div class="form-field full">
+              <label for="subject">Chủ đề</label>
+              <input id="subject" name="subject" required placeholder="Bạn muốn trao đổi về điều gì?">
+            </div>
+            <div class="form-field full">
+              <label for="message">Nội dung</label>
+              <textarea id="message" name="message" required placeholder="Viết lời nhắn của bạn..."></textarea>
+            </div>
+            <div class="form-field full">
+              <button class="btn btn-primary" type="submit">Kiểm tra biểu mẫu →</button>
+              <p id="formStatus" class="form-status" aria-live="polite"></p>
+              <p class="form-note">Nút hiện chỉ kiểm tra biểu mẫu ở trình duyệt, không gửi email thật.</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <p>Thiết kế và phát triển bởi Trần Thị Thúy Nga</p>
+      <p>© <span id="currentYear"></span> Cyber Ocean Portfolio</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>
