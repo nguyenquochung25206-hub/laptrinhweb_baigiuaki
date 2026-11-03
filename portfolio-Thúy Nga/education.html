@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="css/ocean-effects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Trần Thị Thúy Nga, sinh viên Công nghệ thông tin.">
+  <title>Học vấn | Thúy Nga — Cyber Ocean</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script src="js/ocean-effects.js"></script>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <div class="ocean-background" aria-hidden="true">
+    <div class="ocean-glow glow-one"></div>
+    <div class="ocean-glow glow-two"></div>
+    <div class="ocean-glow glow-three"></div>
+  </div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+        <li><a href="skills.html" class="nav-link">Kỹ năng</a></li>
+        <li><a href="projects.html" class="nav-link">Dự án</a></li>
+        <li><a href="experience.html" class="nav-link">Kinh nghiệm</a></li>
+        <li><a href="education.html" class="nav-link active" aria-current="page">Học vấn</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+        <li><a href="resume.html" class="nav-link">CV</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Học vấn</div>
+        <span class="section-index">06 / EDUCATION</span>
+        <h1>Học vấn và <span class="gradient-text">thành tích</span></h1>
+        <p class="lead">Thông tin học tập được trình bày ngắn gọn, dễ kiểm tra và không phóng đại thành tích.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="content-layout">
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-date">ĐANG THEO HỌC · NĂM 3</span>
+            <h3>Ngành Công nghệ thông tin</h3>
+            <p>Trường: vui lòng bổ sung tên trường chính thức trước khi nộp.</p>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-date">HỌC BỔNG</span>
+            <h3>Học bổng loại Khá</h3>
+            <p>Học kỳ I năm nhất — theo thông tin bạn cung cấp.</p>
+          </article>
+        </div>
+
+        <aside class="card reveal">
+          <h3>Một số học phần nổi bật</h3>
+          <p>Các học phần bạn cho biết đạt điểm 4.0:</p>
+          <div class="info-list">
+            <div class="info-row">
+              <span>Cấu trúc dữ liệu giải thuật</span>
+              <span>4.0</span>
+            </div>
+            <div class="info-row">
+              <span>Cơ sở dữ liệu</span>
+              <span>4.0</span>
+            </div>
+            <div class="info-row">
+              <span>Phân tích cấu trúc dữ liệu giải thuật</span>
+              <span>4.0</span>
+            </div>
+          </div>
+          <p style="margin-top:18px;color:var(--muted);font-size:11px">Xác nhận thang điểm và tên học phần chính thức theo bảng điểm.</p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <p>Thiết kế và phát triển bởi Trần Thị Thúy Nga</p>
+      <p>© <span id="currentYear"></span> Cyber Ocean Portfolio</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

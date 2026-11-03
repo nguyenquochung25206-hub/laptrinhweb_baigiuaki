@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <link rel="stylesheet" href="css/ocean-effects.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio cá nhân của Trần Thị Thúy Nga, sinh viên Công nghệ thông tin.">
+  <title>Dự án | Thúy Nga — Cyber Ocean</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<script src="js/ocean-effects.js"></script>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua điều hướng</a>
+
+  <div class="ocean-background" aria-hidden="true">
+    <div class="ocean-glow glow-one"></div>
+    <div class="ocean-glow glow-two"></div>
+    <div class="ocean-glow glow-three"></div>
+  </div>
+
+  <header class="header">
+    <nav class="navbar container" aria-label="Điều hướng chính">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+        <li><a href="about.html" class="nav-link">Giới thiệu</a></li>
+        <li><a href="skills.html" class="nav-link">Kỹ năng</a></li>
+        <li><a href="projects.html" class="nav-link active" aria-current="page">Dự án</a></li>
+        <li><a href="experience.html" class="nav-link">Kinh nghiệm</a></li>
+        <li><a href="education.html" class="nav-link">Học vấn</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Liên hệ</a></li>
+        <li><a href="resume.html" class="nav-link">CV</a></li>
+      </ul>
+      <div class="nav-actions">
+        <button class="menu-toggle" id="menuToggle" aria-label="Mở menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <button class="theme-toggle" id="themeToggle" aria-label="Chuyển đổi giao diện">
+          <span id="themeIcon">☾</span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container reveal">
+        <div class="breadcrumb"><a href="index.html">Trang chủ</a> / Dự án</div>
+        <span class="section-index">04 / PROJECTS</span>
+        <h1>Dự án <span class="gradient-text">học tập</span></h1>
+        <p class="lead">Khu vực giới thiệu sản phẩm đã làm hoặc đang phát triển. Các thẻ có thể lọc và tìm kiếm; hãy cập nhật mô tả theo sản phẩm thực tế của bạn.</p>
+      </div>
+    </section>
+
+    <section class="content-section container">
+      <div class="project-toolbar">
+        <div class="filter-group">
+          <button class="filter-btn active" data-filter="all">Tất cả</button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="learning">Đang học</button>
+        </div>
+        <input id="projectSearch" class="search-input" type="search" placeholder="Tìm dự án..." aria-label="Tìm dự án">
+      </div>
+
+      <div class="card-grid">
+        <article class="card project-card" data-project-card data-category="web" data-search="portfolio digital cv html css javascript">
+          <div class="project-cover">PORTFOLIO</div>
+          <div class="project-body">
+            <span class="section-index">PROJECT 01 · ĐANG PHÁT TRIỂN</span>
+            <h3>Personal Portfolio</h3>
+            <p>Website giới thiệu bản thân, kỹ năng, học vấn và các dự án. Dự án này đang được xây dựng bằng HTML, CSS và JavaScript.</p>
+            <div class="tag-list">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-actions">
+              <a class="btn btn-outline" href="project-detail.html">Xem chi tiết →</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-project-card data-category="learning" data-search="student management system quản lý sinh viên database">
+          <div class="project-cover">STUDENT DB</div>
+          <div class="project-body">
+            <span class="section-index">PROJECT 02 · Ý TƯỞNG</span>
+            <h3>Quản lý sinh viên</h3>
+            <p>Ý tưởng dự án để luyện mô hình dữ liệu và các thao tác thêm, xem, sửa, xóa. Chưa ghi nhận là sản phẩm hoàn thành.</p>
+            <div class="tag-list">
+              <span class="tag">Database</span>
+              <span class="tag">CRUD</span>
+              <span class="tag">Learning</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="card project-card" data-project-card data-category="learning" data-search="web responsive interface giao diện website">
+          <div class="project-cover">WEB UI</div>
+          <div class="project-body">
+            <span class="section-index">PROJECT 03 · Ý TƯỞNG</span>
+            <h3>Giao diện website responsive</h3>
+            <p>Bài thực hành xây dựng giao diện thích ứng máy tính và điện thoại, chú trọng hệ thống chữ, khoảng cách và khả năng đọc.</p>
+            <div class="tag-list">
+              <span class="tag">Responsive</span>
+              <span class="tag">UI</span>
+              <span class="tag">CSS</span>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <div id="emptyState" class="empty-state">Không tìm thấy dự án phù hợp.</div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-symbol"><</span> NGA <span class="logo-symbol">/></span>
+      </a>
+      <p>Thiết kế và phát triển bởi Trần Thị Thúy Nga</p>
+      <p>© <span id="currentYear"></span> Cyber Ocean Portfolio</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+  <script src="js/theme.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
